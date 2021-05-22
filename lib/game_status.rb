@@ -48,6 +48,6 @@ end
 
 def winner(board)
   if win_token = won?(board)
-    puts "win_token"
+    return "#{win_token}"
   end
 end
