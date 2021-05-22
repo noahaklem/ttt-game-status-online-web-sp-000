@@ -47,7 +47,8 @@ def over?(board)
 end
 
 def winner(board)
-  if win_token = won?(board)
+  win_combo = won?(board)
+  win_token = win_combo[0]
     return "#{win_token}"
   end
 end
