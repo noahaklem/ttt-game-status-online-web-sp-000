@@ -48,6 +48,6 @@ end
 
 def winner(board)
     if win_array = won?(board)
-    board[win_array] == board[1]
+    return board[win_array[0]]
   end
 end
