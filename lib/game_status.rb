@@ -47,7 +47,7 @@ def over?(board)
 end
 
 def winner(board)
-    if winning_combo = won?(board)
-    board[winning_combo] == position[1]
+    if win_array = won?(board)
+    board[win_array] == board[1]
   end
 end
